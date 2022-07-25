@@ -1,0 +1,71 @@
+# Node + Postgres
+```
+https://www.youtube.com/watch?v=MwltB8NULC8&t=622s
+```
+### npm init -y
+### npm install 
+* express
+* body-parser (tratar requisições)
+* pg-promisse (conectar com postgres)
+* jest (testes de integração)
+* axios
+``` 
+npm install express body-parser pg-promise jest axios --save
+```
+### .gitignore
+* node_modules
+### Nodemon 
+```
+npm install nodemon --save
+```
+* Para usar o nodemon, deve se no script usar o start com node + path do index (ou server ou api)
+
+#### criar diretório database
+* criar schema
+> create.sql
+
+#### criar diretório server
+* criar pasta route
+* criar pasta service (service delega para data)
+* criar pasta data
+* criar pasta infra (gerencia conexão com o banco)
+* cria pasta para testes test
+
+#### criar o arquivo server.js (pode ser outro nome api.js por exemplo)
+> será estabelecido o servidor
+
+### Criar as rotas nas pasta routes
+
+apontar o api (no caso server.js)
+
+
+#### Diretório Infra
+* parametros de conexão com o banco de dados
+#### Diretório Data
+* Queries
+
+### Rodando
+	* A função na rota, chama a Service instancia na mesma, 	esse Service delegou e usou a query descrita na mesma.
+
+### Testes
+* create file posts.test.js
+> aqui se utiliza o jest
+> Coloca-se a função do teste
+* Alterar o package.json incluindo o scrip de testes
+* Em outro terminal
+``` 
+npm test
+```
+	* API -> ROUTE -> SERVICE(CONTROLLER) -> DATA -> INFRA
+
+	
+
+
+* axios -e uma biblioteca cliente que faz requisições http, se faz chamadas 
+* cripto biblioteca nativa node, para gerar conteúdo para testes
+
+* Arquitetura
+> https://www.youtube.com/watch?v=MwltB8NULC8&list=PLQCmSnNFVYnQ28Gd7SmWiM-dChqaWiy8i&index=2
+* TDD
+> https://www.youtube.com/watch?v=Eb9I8KNhYdU&list=PLQCmSnNFVYnQ28Gd7SmWiM-dChqaWiy8i&index=3&t=3s
+# 12:29
