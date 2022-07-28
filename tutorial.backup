@@ -56,10 +56,11 @@ apontar o api (no caso server.js)
 ``` 
 npm test
 ```
+
+* test.only -> testa somente um
+* 
+
 	* API -> ROUTE -> SERVICE(CONTROLLER) -> DATA -> INFRA
-
-	
-
 
 * axios -e uma biblioteca cliente que faz requisições http, se faz chamadas 
 * cripto biblioteca nativa node, para gerar conteúdo para testes
@@ -68,4 +69,4 @@ npm test
 > https://www.youtube.com/watch?v=MwltB8NULC8&list=PLQCmSnNFVYnQ28Gd7SmWiM-dChqaWiy8i&index=2
 * TDD
 > https://www.youtube.com/watch?v=Eb9I8KNhYdU&list=PLQCmSnNFVYnQ28Gd7SmWiM-dChqaWiy8i&index=3&t=3s
-# 12:29
+# 27:46
